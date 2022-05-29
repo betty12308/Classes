@@ -22,4 +22,18 @@ public class Car {
         return this.model;
     }
 
+    public void setColour(String colour) {
+        String validColour = colour.toLowerCase();
+        if(validColour.equals("blue") || validColour.equals("red")) {
+            this.colour = colour;
+        } else {
+            this.colour = "Unknown";
+        }
+
+    }
+
+    public String getColour() {
+        return this.colour;
+    }
+
 }
